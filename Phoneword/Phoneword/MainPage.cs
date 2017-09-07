@@ -39,12 +39,17 @@ namespace Phoneword
 				if (dialer != null)
 					App.PhoneNumbers.Add(translatedNumber);
 				    callHistoryButton.IsEnabled = true;
-				    dialer.Dial(translatedNumber);	    
+				    dialer.Dial(translatedNumber);
+                openViewButton.IsEnabled = true;
 			}
 		}
 		async void OnCallHistory(object sender, EventArgs e)
 		{
 			await Navigation.PushModalAsync(new CallHistoryPage());
+		}
+		async void OpenVievSlider(object sender, EventArgs e)
+		{
+			await Navigation.PushModalAsync(new ViewSlider());
 		}
 	}
 }

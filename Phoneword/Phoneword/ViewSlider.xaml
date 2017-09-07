@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Phoneword.ViewSlider">
+	<ContentPage.Content>
+	</ContentPage.Content>
+    <StackLayout>
+        <BoxView BindingContext="{ x:Reference SliderElement}" Opacity="{Binding Value}" Color="Blue"></BoxView>
+        <Slider x:Name="SliderElement" ValueChanged="SliderElement_ValueChanged" Maximum="12" Minimum="1">
+
+        </Slider>
+        <Label x:Name="textResult" HorizontalOptions="Center" Text="N"></Label>
+        <Label x:Name="fibunatcci" HorizontalOptions="Center" Text="Fib"></Label>
+    </StackLayout>
+</ContentPage>

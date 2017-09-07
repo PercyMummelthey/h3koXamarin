@@ -19,6 +19,7 @@
             <Button x:Name="callButton" Text="Call" IsEnabled="false" Clicked="OnCall" />
             <Button x:Name="callHistoryButton" Text="Call History" IsEnabled="false"
                     Clicked="OnCallHistory" />
+            <Button x:Name="openViewButton" Text="Open Sliderview" Clicked="OpenVievSlider" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
