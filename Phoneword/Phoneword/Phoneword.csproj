@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ED1B0B0F-9B98-4FFA-9595-6694ABAAA68D}</ProjectGuid>
+    <ProjectGuid>{ACF4650D-2F8C-4687-9931-BD146384B501}</ProjectGuid>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UseMSBuildEngine>true</UseMSBuildEngine>
     <OutputType>Library</OutputType>
-    <RootNamespace>XamarinTestApp</RootNamespace>
-    <AssemblyName>XamarinTestApp</AssemblyName>
+    <RootNamespace>Phoneword</RootNamespace>
+    <AssemblyName>Phoneword</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
   </PropertyGroup>
@@ -29,17 +29,16 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
-    <EmbeddedResource Include="XamarinTestAppPage.xaml" />
+    <EmbeddedResource Include="PhonewordPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="XamarinTestAppPage.xaml.cs">
-      <DependentUpon>XamarinTestAppPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MainPage.cs" />
+    <Compile Include="PhoneTranslator.cs" />
+    <Compile Include="IDialer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
